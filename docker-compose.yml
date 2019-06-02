@@ -1,0 +1,9 @@
+version: "3"
+services:
+  laravel:
+    build: .
+    tty: true
+    volumes:
+      - .:/var/www/laravel
+    ports:
+      - 8000:8000
