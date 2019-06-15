@@ -5,6 +5,6 @@ RUN apk update \
     && apk --no-cache add \
     bash \
     && docker-php-ext-install  bcmath \
+    pdo_mysql \
     && curl -sS https://getcomposer.org/installer | php \
     && mv -v composer.phar /usr/local/bin/composer \
-
