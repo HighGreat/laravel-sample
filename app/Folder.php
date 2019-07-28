@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class folder extends Model
+class Folder extends Model
 {
     public function tasks()
     {
-        return $this->hasMany('App\task');
+        return $this->hasMany('App\Task');
     }
 }
